@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+ font-family: 'Roboto', sans-serif;
+ font-weight: 300;
+ overflow: hidden;
+ background: #181818;
+ color: #fff;
+
+}
+
+h1, h2{
+    font-weight: 300;
+}
+
+#wrapper
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+#left{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+#signin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    padding: 2rem;
+}
+
+
+#signin form{
+    padding: 1rem;
+    width: 80%;
+}
+
+#signin .logo
+{
+    margin-bottom: 4vh;
+}
+
+#signin .logo img{
+    width: 300px;
+}
+
+#signin label{
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: .9rem;
+
+}
+
+#signin .text-input{
+    border-radius: 2px;
+    background-color: #181818;
+    border: 1px solid #555;
+    width: 100%;
+    margin-bottom: 1.3rem;
+    color: #ccc;
+    padding: 0.5rem 1rem;
+    line-height: 0.3rem;
+}
+#signin .primary-btn{
+    width: 100%;
+}
+
+ .primary-btn
+{
+   padding: 0.7rem 1rem;
+   display: block;
+   background-color: orangered;
+   border: 0;
+   border-radius: 2px;
+   font-weight: 500;
+   color: #fff;
+   cursor: pointer;
+   text-align: center; 
+   transition: background-color 0.5s;
+}
+
+.primary-btn:hover
+{
+    background-color: rgb(246, 120, 74);
+}
+
+#signin .link, .or, 
+.secondary-btn{
+    width: 60%;
+}
+
+#signin .link a{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    
+}
+
+
+#signin .or
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+#signin .or .bar{
+    flex:auto;
+    border: none;
+    height: 1px;
+    background: #aaa;
+}
+#signin .or span{
+    font-size: 1rem;
+    padding: 0 4px;
+    color: #fff;
+}
+
+.secondary-btn
+{
+   padding: 0.7rem 1rem;
+   display: block;
+   background-color: none;
+   border: 1px solid #f4f4f4;
+   border-radius: 1px;
+   font-weight: 500;
+   color: #fff;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none; 
+   transition: all 0.5s;
+}
+
+.secondary-btn:hover
+{
+    border-color: rgb(251, 85, 25);
+    color:rgb(251, 85, 25)
+}
+
+#main-footer{
+    text-align: center;
+    color: #f4f4f4;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    max-width: 80%;
+}
+#main-footer a{
+  color: orangered;
+  
+}
+#right
+{
+    flex: 1;
+}
+
+#showcase
+{
+    background: url("login-bg.jpg") no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.showcase-text{
+    font-size: 3rem;
+    color: #fff;
+    width:100%;
+    margin-bottom: 1.5rem;
+}
+#showcase .secondary-btn
+{
+    margin: auto;
+    width:60%;
+
+}
+
+@media(min-width: 1200px) {
+    
+    #left
+    {
+        flex:4;
+    }
+    
+    #right{
+        flex:6;
+    }
+
+}
+
+@media (max-width: 768px)
+{
+    body{
+        overflow: auto;
+    }
+    #right{
+        display: none;
+    }
+}
